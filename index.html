@@ -18,13 +18,24 @@
     <!-- CSS-->
     <link href="style.css" rel="stylesheet" media="all" />
   </head>
-
+  
   <body>
-    <h1>Open the Developer Tools to see the console output.</h1>
-    <h3>
-      Either right click and select "Inspect" or use the shortcut Option + ⌘ + J
-      (on macOS), or Shift + CTRL + J (on Windows/Linux).
-    </h3>
+    <h2>QUIZ</h2>
+    <div id="quizapp">
+      <div class="header">
+        <button id="startbtn" style="height: 50%; border: none; border-radius: 5px;"">start game</button>
+        <h3 id="score">Points:</h3>
+      </div>
+      <div id="quiz" class="hide">
+        <main id="mainquiz">
+          <h1 id="resultbox"></h1>
+          <div id="questionbox"></div>
+          <form id="input">
+            <input type="text" name="answer" required placeholder="Enter your anwser...">
+          </form>
+        </div>
+        </main>
+        <div>
     <script src="code.js"></script>
   </body>
 </html>
